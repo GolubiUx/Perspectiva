@@ -1,0 +1,560 @@
+body {
+    background-color: rgba(244, 244, 244, 1);
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(74, 74, 74, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 302px;
+    height: 135px;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 50px;
+    margin-top: -10px;
+    max-width: calc(100% - 66px); 
+    margin-left: auto;
+    background: transparent;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    width: 133px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(74, 74, 74, 1);
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 50px;
+    background-color: rgba(74, 74, 74, 0.2);
+    padding: 0 10px;
+   text-indent: 40px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav-item:hover {
+    background-color: rgba(74, 74, 74, 0.4); /* Подсвечиваем фон при наведении */
+    color: rgba(16, 55, 19, 1); /* Цвет текста при наведении */
+}
+.nav-item .icon:hover {
+    background-color: rgba(244, 244, 244, 0.9); /* Изменяем цвет фона иконки при наведении */
+}
+
+.nav-item .icon {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(244, 244, 244, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 23px 21px;
+    margin-left: -5px;
+    margin-right: 10px; 
+}
+
+.nav-item.contact {
+    background-color: rgba(16, 55, 19, 0.7);
+    color: rgba(244, 244, 244, 1);
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.nav-item.contact:hover {
+    background-color: rgba(16, 55, 19, 0.9); 
+    color: rgba(244, 244, 244, 1); 
+}
+
+.nav-item.contact .icon:hover {
+    background-color: rgba(244, 244, 244, 0.9); 
+}
+
+.nav-item.contact a {
+    justify-content: flex-start; 
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.cta-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background: rgba(147, 197, 114, 0.7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.cta-button:hover {
+    background: rgba(147, 197, 114, 1);
+}
+
+/* Пути до иконок */
+.nav-item:nth-child(1) .icon {
+    background-image: url('icons/поступающим.svg'); /* Поступающим */
+}
+
+.nav-item:nth-child(2) .icon {
+    background-image: url('icons/шапочка.svg'); /* Программы обучения */
+}
+
+.nav-item:nth-child(3) .icon {
+    background-image: url('icons/кошелек.svg'); /* Стоимость */
+}
+
+.nav-item:nth-child(4) .icon {
+    background-image: url('icons/люди.svg'); /* О нас */
+}
+
+.nav-item:nth-child(5) .icon {
+    background-image: url('icons/часы.svg'); /* Доп. образование */
+}
+
+.nav-item:not(.contact) a {
+    justify-content: flex-start; 
+}
+
+
+.nav-item.contact {
+    z-index: 10; 
+    position: relative;
+    background-color: rgba(16, 55, 19, 0.7);
+    color: rgba(244, 244, 244, 1);
+    justify-content: center;
+    margin-right: 10px; 
+}
+
+/* Общие стили */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(74, 74, 74, 1);
+    margin: 0;
+    padding: 0;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+.section {
+    text-align: center;
+    padding: 50px;
+}
+
+.heading-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-weight: 600; 
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.subheading {
+    font-weight: 500; 
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+.cta-button {
+    width: 100%;
+    max-width: 317px;
+    background-color: rgba(147, 197, 114, 0.7);
+    color: rgba(74, 74, 74, 1);
+    border: none;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 35px; 
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+.icon {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(244, 244, 244, 0.9);
+    border-radius: 50%;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 23px 21px;
+}
+
+.icon-left-top,
+.icon-left-bottom,
+.icon-right-top,
+.icon-right-bottom {
+    width: 72px;
+    height: 72px;
+    background-size: contain;
+    position: absolute;
+}
+
+/* Левая сторона */
+.icon-left-top {
+    background-image: url('icons_write/world.svg');
+    margin-top: -40px;
+    margin-left: -500px;
+}
+
+.icon-left-bottom {
+    background-image: url('icons_write/карандаш.svg');
+    margin-top: -40px;
+    margin-left: -400px;
+}
+
+/* Правая сторона  */
+.icon-right-top {
+    background-image: url('icons_write/Книга.svg');
+    margin-top: -200px;
+    right:-100px;
+}
+
+.icon-right-bottom {
+    background-image: url('icons_write/булавка.svg');
+    margin-top: -40px; 
+    right:-100px;
+}
+
+/* Заголовок-контейнер */
+.heading-container {
+    position: relative;
+    display: inline-block;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(74, 74, 74, 1);
+    margin: 0;
+    padding: 0;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+
+
+/* Секция для миссии */
+.section {
+    text-align: center;
+    padding: 20px 0; 
+}
+.mission-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 0px;
+    clear: both; 
+}
+
+/*все фигуры*/
+.mission-figure {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    background-color: rgba(147, 197, 114, 0.75);
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+/* Заголовок всех фигур*/
+.mission-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Текст внутри каждой фигуры*/
+.mission-text {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует содержимое */
+    text-align: center;
+    padding: 30px;
+}
+
+/*Размеры зеленой и серой фигур*/
+.mission-figure {
+    width: 635px;
+    height: 635px;
+    background-color: rgba(147, 197, 114, 0.75);
+    border-radius: 20px;
+    
+}
+
+/*цвет желтой фигуры */
+.new-figure {
+    background-color: rgba(224, 191, 86, 0.65);  
+}
+
+/*цвет серой фигуры*/
+.mission-figure-left {
+    background-color: rgba(217, 217, 217, 1);  
+}
+
+
+
+
+
+/* Общие стили для всей секции */
+.why-us-section {
+   position: relative;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+/* Заголовок "ПОЧЕМУ МЫ?" */
+.why-us-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(74, 74, 74, 1);
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding: 50px 50px;
+    padding-top: 50px;
+}
+
+/* Обертка для иконок вокруг заголовка */
+.icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+    position: static;
+}
+
+/* Стили для иконок вокруг заголовка */
+.icon {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.top-left {
+    top: 20px;
+    left: 200px;
+    margin: 10px;
+}
+
+.bottom-center {
+    bottom: 900px;
+    left: 300px;
+    margin-bottom: 10px;
+}
+
+.top-right {
+    top: 50px;
+    right: -30px;
+    margin: 40px;
+}
+
+/* Информация с иконками и текстом */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 70px;
+   padding-left: 110px;
+    
+}
+
+/* Информация с иконками */
+.info-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Стили для иконок в информационном блоке */
+.info-icon {
+    width: 126px;
+    height: 126px;
+}
+
+/* Текст в информационном блоке */
+.info-text {
+    font-size: 35px;
+    font-weight: 400;
+    color: rgba(74, 74, 74, 1);
+}
+
+/*нас рекомендуют*/
+.recommend-text-container {
+    position: relative; 
+    text-align: center;
+}
+
+.recommend-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    font-size: 48px;
+    color: rgba(74, 74, 74, 1);
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 0; 
+}
+.recommend-icon {
+    position: absolute; 
+    top: 200px; 
+}
+
+.icon-left {
+    left: calc(50% - 25px); 
+    top: 70px; 
+}
+
+.icon-right {
+    right: 300px; 
+    top: 0;
+}
+
+/* Контейнер для всех отзывов */
+.reviews-slider {
+    display: flex; /* Размещение всех отзывов в одну строку */
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    gap: 13px; /* Отступ между отзывающимися SVG */
+    padding: 20px; /* Общие отступы внутри контейнера */
+   
+    cursor: grab;
+}
+.reviews-slider:active {
+    cursor: grabbing; /* Меняется при нажатии */
+}
+
+
+/* Стили для каждого отзыва */
+.review {
+    display: inline-block;
+    background-image: url("review/review.svg");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column; /* Отзывы идут вертикально (SVG сверху, текст снизу) */
+    flex: 0 0 677px;
+    width: 320px;
+    height: 677px;
+    position: relative;
+}
+
+
+.reviews-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 13px; /* Отступ между SVG-фигурами */
+    overflow-x: auto; /* Добавит горизонтальный скролл, если не помещается */
+    padding: 20px 0; 
+    scroll-behavior: smooth; /* Плавный скроллинг */
+    white-space: nowrap;
+    scrollbar-width: none; /* Для Firefox */
+    scrollbar-color: rgba(74, 74, 74, 0.5) transparent;
+}
+/* Добавляет плавный скролл при перетаскивании */
+.reviews-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.reviews-container::-webkit-scrollbar {
+        display: none; /* Скрыть скроллбар в Chrome/Safari */
+    }
+
+
+.reviews-container::-webkit-scrollbar-thumb {
+    background: rgba(74, 74, 74, 0.5);
+    border-radius: 4px;
+}
+/* Стили для контента отзыва */
+.review-content {
+    position: absolute;
+    top: 280px; /* Верхний отступ для текста */
+    left: 10px; /* Отступ от левого края */
+    right: 10px; /* Отступ от правого края */
+    text-align: left; 
+    padding: 3px;
+}
+
+.review-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('review/review.svg') no-repeat center / cover;
+}
+
+/* Заголовок отзыва */
+.review-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(74, 74, 74, 1);
+    margin-bottom: 0; 
+    text-align: left;
+}
+
+/* Текст отзыва */
+.review-text {
+    font-size: 16px;
+    color: rgba(74, 74, 74, 1);
+    line-height: 1.4;
+    text-align: left;
+    max-width: 1000px;   
+    margin: 0;
+    
+}
